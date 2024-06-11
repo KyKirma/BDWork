@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS cliente (
     nome_cliente VARCHAR(50) NOT NULL,
     numero_telefone CHAR(20),
     email VARCHAR(50),
-    PRIMARY KEY (id_cliente),
+    PRIMARY KEY (id_cliente)
 );
 
 -- Criação da tabela de categorias de flores
@@ -52,8 +52,6 @@ CREATE TABLE IF NOT EXISTS detalhe_pedido (
     id_detalhe_pedido INT AUTO_INCREMENT NOT NULL,
     pedido_id INT,
     flor_id INT,
-    quantidade INT,
-    preco_unitario DECIMAL(10, 2),
     PRIMARY KEY (id_detalhe_pedido),
     FOREIGN KEY (pedido_id) REFERENCES pedido(id_pedido),
     FOREIGN KEY (flor_id) REFERENCES flor(id_flor)

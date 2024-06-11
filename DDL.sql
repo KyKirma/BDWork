@@ -7,39 +7,14 @@ CREATE DATABASE sistemaFloricultura;
 -- Seleciona o banco de dados para uso
 USE sistemaFloricultura;
 
--- Criação da tabela de empresas
-CREATE TABLE IF NOT EXISTS empresa (
-    id_empresa INT AUTO_INCREMENT NOT NULL,
-    nome_empresa VARCHAR(50) NOT NULL,
-    endereco VARCHAR(255),
-    cnpj CHAR(18),
-    descricao_empresa VARCHAR(255),
-    PRIMARY KEY (id_empresa)
-);
-
 -- Criação da tabela de clientes
 CREATE TABLE IF NOT EXISTS cliente (
     id_cliente INT AUTO_INCREMENT NOT NULL,
     nome_cliente VARCHAR(50) NOT NULL,
-    id_empresa INT,
     numero_telefone CHAR(20),
     email VARCHAR(50),
     PRIMARY KEY (id_cliente),
-    FOREIGN KEY (id_empresa) REFERENCES empresa(id_empresa)
 );
-
--- Criação da tabela de fornecedores
-CREATE TABLE IF NOT EXISTS fornecedor (
-    id_fornecedor INT AUTO_INCREMENT NOT NULL,
-    nome_fornecedor VARCHAR(50) NOT NULL,
-    id_empresa INT,
-    endereco VARCHAR(255),
-    telefone CHAR(20),
-    email VARCHAR(50),
-    PRIMARY KEY (id_fornecedor),
-    FOREIGN KEY (id_empresa) REFERENCES empresa(id_empresa)
-);
-
 
 -- Criação da tabela de categorias de flores
 CREATE TABLE IF NOT EXISTS categoria_flor (
@@ -52,14 +27,12 @@ CREATE TABLE IF NOT EXISTS categoria_flor (
 -- Criação da tabela de flores
 CREATE TABLE IF NOT EXISTS flor (
     id_flor INT AUTO_INCREMENT NOT NULL,
-    fornecedor_id INT,
     categoria_id INT,
     nome_flor VARCHAR(50) NOT NULL,
     descricao VARCHAR(255),
     estoque_disponivel INT,
     preco DECIMAL(10, 2),
     PRIMARY KEY (id_flor),
-    FOREIGN KEY (fornecedor_id) REFERENCES fornecedor(id_fornecedor),
     FOREIGN KEY (categoria_id) REFERENCES categoria_flor(id_categoria)
 );
 

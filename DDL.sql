@@ -11,7 +11,7 @@ USE sistemaFloricultura;
 CREATE TABLE IF NOT EXISTS cliente (
     id_cliente INT AUTO_INCREMENT NOT NULL,
     nome_cliente VARCHAR(50) NOT NULL,
-    numero_telefone CHAR(20),
+    numero_telefone CHAR(11),
     email VARCHAR(50),
     PRIMARY KEY (id_cliente)
 );

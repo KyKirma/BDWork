@@ -71,7 +71,7 @@ VALUES
   (4, 'Cancelado', 300.00, 'CHEQUE SEM FUNDO', '2024-06-20'),
   (3, 'Realizado', 700.00, 'PARCELADO EM 12X', '2024-06-21'),
   (2, 'Pendente', 250.00, 'PAPAI VAI PAGAR', '2024-06-2'),
-  (7, 'Realizado', 1350.00, 'PIX', '2024-05-18'),
+  (7, 'Realizado', 1300.00, 'PIX', '2024-05-18'),
   (10, 'Cancelado', 150.00, 'GOLPE DO COMPROVANTE FALSO', '2024-05-19'),
   (5, 'Realizado', 100.00, 'ENTRADA DE 30.00 E RESTANTE PAGO PELO PAPAI', '2024-05-20'),
   (6, 'Realizado', 700.00, 'ROLÊ DE COMPASS COM OS VENDEDORES', '2024-04-18'),
@@ -79,12 +79,12 @@ VALUES
 
 INSERT INTO detalhe_pedido(pedido_id, flor_id, qnt) VALUES
     (1, 1, 1),
-    (2, 3),
-    (3, 4),
-    (4, 2),
-    (5, 4),
-    (6, 4),
-    (7, 6),
-    (8, 5),
-    (9, 8),
-    (10, 10);
+    (2, 3, 1),
+    (3, 4, 1),
+    (4, 2, 1),
+    (5, 4, 1),
+    (6, 4, 13),
+    (7, 6, 1),
+    (8, 5, 1),
+    (9, 8, 1),
+    (10, 10, 1);

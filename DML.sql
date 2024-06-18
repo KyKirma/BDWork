@@ -24,45 +24,45 @@ INSERT INTO cliente(nome_cliente, numero_telefone, email) VALUES
     ('Vitor', 34992330132, 'vitor@iftm.com.br');
 
 INSERT INTO flor(categoria_id, nome_flor, descricao, estoque_disponivel, preco) VALUES
-    (1, 'Buquê', 'P Vendida em forma de buquê ou unitária', 35, 100.00),
-    (1, 'Buquê', 'M Vendida em forma de buquê ou unitária', 15, 200.00),
-    (1, 'Buquê', 'G Vendida em forma de buquê ou unitária', 3, 300.00),
+    (1, 'Buquê P', 'Vendida em forma de buquê ou unitária', 35, 100.00),
+    (1, 'Buquê M', 'Vendida em forma de buquê ou unitária', 15, 200.00),
+    (1, 'Buquê G', 'Vendida em forma de buquê ou unitária', 3, 300.00),
 
-    (2, 'Buquê', 'P Vendida em forma de buquê ou unitária', 24, 100.00),
-    (2, 'Buquê', 'M Vendida em forma de buquê ou unitária', 17, 200.00),
-    (2, 'Buquê', 'G Vendida em forma de buquê ou unitária', 2, 300.00),
+    (2, 'Buquê P', 'Vendida em forma de buquê ou unitária', 24, 100.00),
+    (2, 'Buquê M', 'Vendida em forma de buquê ou unitária', 17, 200.00),
+    (2, 'Buquê G', 'Vendida em forma de buquê ou unitária', 2, 300.00),
 
-    (3, 'Buquê', 'P Vendida em forma de buquê ou unitária', 13, 150.00),
-    (3, 'Buquê', 'M Vendida em forma de buquê ou unitária', 7, 250.00),
-    (3, 'Buquê', 'G Vendida em forma de buquê ou unitária', 1, 350.00),
+    (3, 'Buquê P', 'Vendida em forma de buquê ou unitária', 13, 150.00),
+    (3, 'Buquê M', 'Vendida em forma de buquê ou unitária', 7, 250.00),
+    (3, 'Buquê G', 'Vendida em forma de buquê ou unitária', 1, 350.00),
     
-    (4, 'Buquê', 'P Vendida em forma de buquê ou unitária', 23, 150.00),
-    (4, 'Buquê', 'M Vendida em forma de buquê ou unitária', 5, 250.00),
-    (4, 'Buquê', 'G Vendida em forma de buquê ou unitária', 1, 350.00),
+    (4, 'Buquê P', 'Vendida em forma de buquê ou unitária', 23, 150.00),
+    (4, 'Buquê M', 'Vendida em forma de buquê ou unitária', 5, 250.00),
+    (4, 'Buquê G', 'Vendida em forma de buquê ou unitária', 1, 350.00),
 
-    (5, 'Buquê', 'P Vendida em forma de buquê ou unitária', 20, 150.00),
-    (5, 'Buquê', 'M Vendida em forma de buquê ou unitária', 16, 250.00),
-    (5, 'Buquê', 'G Vendida em forma de buquê ou unitária', 9, 350.00),
+    (5, 'Buquê P', 'Vendida em forma de buquê ou unitária', 20, 150.00),
+    (5, 'Buquê M', 'Vendida em forma de buquê ou unitária', 16, 250.00),
+    (5, 'Buquê G', 'Vendida em forma de buquê ou unitária', 9, 350.00),
 
-    (6, 'Buquê', 'P Vendida em forma de buquê ou unitária', 25, 250.00),
-    (6, 'Buquê', 'M Vendida em forma de buquê ou unitária', 13, 300.00),
-    (6, 'Buquê', 'G Vendida em forma de buquê ou unitária', 1, 380.00),
+    (6, 'Buquê P', 'Vendida em forma de buquê ou unitária', 25, 250.00),
+    (6, 'Buquê M', 'Vendida em forma de buquê ou unitária', 13, 300.00),
+    (6, 'Buquê G', 'Vendida em forma de buquê ou unitária', 1, 380.00),
 
-    (7, 'Buquê', 'P Vendida em forma de buquê ou unitária', 10, 150.00),
-    (7, 'Buquê', 'M Vendida em forma de buquê ou unitária', 6, 190.00),
-    (7, 'Buquê', 'G Vendida em forma de buquê ou unitária', 3, 250.00),
+    (7, 'Buquê P', 'Vendida em forma de buquê ou unitária', 10, 150.00),
+    (7, 'Buquê M', 'Vendida em forma de buquê ou unitária', 6, 190.00),
+    (7, 'Buquê G', 'Vendida em forma de buquê ou unitária', 3, 250.00),
 
-    (8, 'Buquê', 'P Vendida em forma de buquê ou unitária', 8, 250.00),
-    (8, 'Buquê', 'M Vendida em forma de buquê ou unitária', 5, 350.00),
-    (8, 'Buquê', 'G Vendida em forma de buquê ou unitária', 3, 400.00),
+    (8, 'Buquê P', 'Vendida em forma de buquê ou unitária', 8, 250.00),
+    (8, 'Buquê M', 'Vendida em forma de buquê ou unitária', 5, 350.00),
+    (8, 'Buquê G', 'Vendida em forma de buquê ou unitária', 3, 400.00),
 
-    (9, 'Buquê', 'P Vendida em forma de buquê ou unitária', 3, 200.00),
-    (9, 'Buquê', 'M Vendida em forma de buquê ou unitária', 1, 250.00),
-    (9, 'Buquê', 'G Vendida em forma de buquê ou unitária', 1, 300.00),
+    (9, 'Buquê P', 'Vendida em forma de buquê ou unitária', 3, 200.00),
+    (9, 'Buquê M', 'Vendida em forma de buquê ou unitária', 1, 250.00),
+    (9, 'Buquê G', 'Vendida em forma de buquê ou unitária', 1, 300.00),
 
-    (10, 'Buquê', 'P Vendida em forma de buquê ou unitária', 10, 170.00),
-    (10, 'Buquê', 'M Vendida em forma de buquê ou unitária', 8, 240.00),
-    (10, 'Buquê', 'G Vendida em forma de buquê ou unitária', 3, 295.00);
+    (10, 'Buquê P', 'Vendida em forma de buquê ou unitária', 10, 170.00),
+    (10, 'Buquê M', 'Vendida em forma de buquê ou unitária', 8, 240.00),
+    (10, 'Buquê G', 'Vendida em forma de buquê ou unitária', 3, 295.00);
 
 INSERT INTO pedido (cliente_id, status_pedido, valor_total, metodo_pagamento, data)
 VALUES
@@ -73,7 +73,7 @@ VALUES
   (2, 'Pendente', 250.00, 'PAPAI VAI PAGAR', '2024-06-2'),
   (7, 'Realizado', 1350.00, 'PIX', '2024-05-18'),
   (10, 'Cancelado', 150.00, 'GOLPE DO COMPROVANTE FALSO', '2024-05-19'),
-  (5, 'Realizadíssimo', 100.00, 'ENTRADA DE 30.00 E RESTANTE PAGO PELO PAPAI', '2024-05-20'),
+  (5, 'Realizado', 100.00, 'ENTRADA DE 30.00 E RESTANTE PAGO PELO PAPAI', '2024-05-20'),
   (6, 'Realizado', 700.00, 'ROLÊ DE COMPASS COM OS VENDEDORES', '2024-04-18'),
   (9, 'Pendente', 250.00, 'ESPERANDO O DINHEIRO DA APOSTA CAIR', '2024-04-19');
 

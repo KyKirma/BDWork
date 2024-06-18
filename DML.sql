@@ -64,21 +64,21 @@ INSERT INTO flor(categoria_id, nome_flor, descricao, estoque_disponivel, preco) 
     (10, 'Buquê', 'M Vendida em forma de buquê ou unitária', 8, 240.00),
     (10, 'Buquê', 'G Vendida em forma de buquê ou unitária', 3, 295.00);
 
-INSERT INTO pedido(cliente_id, status_pedido, valor_total, metodo_pagamento) VALUES
-    (8, 'Realizado', 350.00, 'PIX'),
-    (1, 'Pendente', 200.00, 'PIX' ),
-    (4, 'Cancelado', 300.00, 'CHEQUE SEM FUNDO'),
-    (3, 'Realizado', 700.00, 'PARCELADO EM 12X'),
-    (2, 'Pendente', 250.00, 'PAPAI VAI PAGAR'),
-    (7, 'Realizado', 1350.00, 'PIX'),
-    (10, 'Cancelado', 150.00, 'GOLPE DO COMPROVANTE FALSO'),
-    (5, 'Realizadíssimo', 100.00, 'ENTRADA DE 30.00 E RESTANTE PAGO PELO PAPAI'),
-    (6, 'Realizado', 700.00, 'ROLÊ DE COMPASS COM OS VENDEDORES'),
-    (9, 'Pendente', 250.00, 'ESPERANDO O DINHEIRO DA APOSTA CAIR');
+INSERT INTO pedido (cliente_id, status_pedido, valor_total, metodo_pagamento, data)
+VALUES
+  (8, 'Realizado', 350.00, 'PIX', '2024-06-18'),
+  (1, 'Pendente', 200.00, 'PIX', '2024-06-19'),
+  (4, 'Cancelado', 300.00, 'CHEQUE SEM FUNDO', '2024-06-20'),
+  (3, 'Realizado', 700.00, 'PARCELADO EM 12X', '2024-06-21'),
+  (2, 'Pendente', 250.00, 'PAPAI VAI PAGAR', '2024-06-2'),
+  (7, 'Realizado', 1350.00, 'PIX', '2024-05-18'),
+  (10, 'Cancelado', 150.00, 'GOLPE DO COMPROVANTE FALSO', '2024-05-19'),
+  (5, 'Realizadíssimo', 100.00, 'ENTRADA DE 30.00 E RESTANTE PAGO PELO PAPAI', '2024-05-20'),
+  (6, 'Realizado', 700.00, 'ROLÊ DE COMPASS COM OS VENDEDORES', '2024-04-18'),
+  (9, 'Pendente', 250.00, 'ESPERANDO O DINHEIRO DA APOSTA CAIR', '2024-04-19');
 
-
-INSERT INTO detalhe_pedido(pedido_id, flor_id) VALUES
-    (1, 1),
+INSERT INTO detalhe_pedido(pedido_id, flor_id, qnt) VALUES
+    (1, 1, 1),
     (2, 3),
     (3, 4),
     (4, 2),

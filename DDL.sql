@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS pedido (
     status_pedido VARCHAR(10),
     valor_total DECIMAL(10, 2),
     metodo_pagamento VARCHAR(15),
+    data DATE,
     PRIMARY KEY (id_pedido),
     FOREIGN KEY (cliente_id) REFERENCES cliente(id_cliente)
 );
@@ -52,6 +53,7 @@ CREATE TABLE IF NOT EXISTS detalhe_pedido (
     id_detalhe_pedido INT AUTO_INCREMENT NOT NULL,
     pedido_id INT,
     flor_id INT,
+    qnt INT,
     PRIMARY KEY (id_detalhe_pedido),
     FOREIGN KEY (pedido_id) REFERENCES pedido(id_pedido),
     FOREIGN KEY (flor_id) REFERENCES flor(id_flor)

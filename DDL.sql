@@ -91,3 +91,22 @@ WHERE p.valor_total = (SELECT MAX(valor_total) FROM pedido);
 CREATE VIEW V_Questao5 AS
 SELECT SUM(estoque_disponivel) AS total_estoque
 FROM flor;
+
+-- Criando a trigger de estoque
+DELIMITER $
+CREATE TRIGGER Tgr_detalhePedido_Insert AFTER INSERT
+ON detalhe_pedido
+FOR EACH ROW
+BEGIN
+	UPDATE Flor SET estoque_disponivel = estoque_disponivel - NEW.qnt
+WHERE id_flor = NEW.flor_id;
+END;
+
+CREATE TRIGGER Tgr_detalhePedido_Delete AFTER DELETE
+ON detalhe_pedido
+FOR EACH ROW
+BEGIN
+	UPDATE Flor SET estoque_disponivel = estoque_disponivel + OLD.qnt
+WHERE id_flor = OLD.flor_id;
+END;
+DELIMITER ;

@@ -102,11 +102,12 @@ BEGIN
 WHERE id_flor = NEW.flor_id;
 END;
 
-CREATE TRIGGER Tgr_detalhePedido_Delete AFTER DELETE
+DELIMITER $
+CREATE TRIGGER Tgr_detalhePedido_Insert AFTER INSERT
 ON detalhe_pedido
 FOR EACH ROW
 BEGIN
-	UPDATE Flor SET estoque_disponivel = estoque_disponivel + OLD.qnt
-WHERE id_flor = OLD.flor_id;
+UPDATE Flor SET estoque_disponivel = estoque_disponivel - NEW.qnt
+WHERE id_flor = NEW.flor_id;
 END;
-DELIMITER ;
+DELIMETER ;

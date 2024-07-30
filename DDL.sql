@@ -109,5 +109,5 @@ FOR EACH ROW
 BEGIN
 UPDATE Flor SET estoque_disponivel = estoque_disponivel - NEW.qnt
 WHERE id_flor = NEW.flor_id;
-END;
-DELIMETER ;
+END $
+DELIMITER ;
